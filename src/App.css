@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+}
+.signup{
+  height: 100vh;
+}
+.container{
+  padding-top:30px;
+  height:80vh;
+  box-shadow: 0 0 18px 0px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.header{
+  grid-column-start:1 ;
+  grid-column-end: 2;
+  justify-content: center;
+  padding-left: 20px;
+}
+.form{
+  grid-column-start: 1;
+  grid-column-end:4;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1,1fr);
+}
+.firsthalf{
+  padding:10px;
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+  display: grid;
+  grid-template-rows: repeat(7,1fr);
+  align-items: center;
+  justify-items: left;
+}
+.secondhalf{
+  grid-column-start:2 ;
+  grid-column-end:3 ;
+}
+.secondhalf img{
+  width: 100%;
+  height: 100%;
+}
+.text-icons{
+  width: 100%;
+  display: flex;
+  flex-basis: auto;
+  align-items: center;
+}
+.text-icons i{
+  position: absolute;
+  margin: 20px 20px;
+}
+.text_field{
+  width:100%;
+  height:20px;
+  border: 3px solid grey;
+  margin: 7px;
+  padding: 25px 40px;
+  border: 1px thin rgb(252, 249, 249);
+  border-radius: 5px;
+}
+.firsthalf input:hover{
+  border-color: rgb(62, 202, 202);
+}
+.btn-clk{
+  width:30%;
+  height: 80%;
+  background-color: rgb(60, 182, 238);
+  border: none;
+  border-radius: 5px;
+  color:white;
+}
+.dir-link{
+  margin:10px 5px 10px 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* --------signin-page---------- */
+/* .container{
+  margin-top: 100px;
+  width:80%;
+  height:80%;
+  padding:50px;
+  box-shadow: 0 0 18px 0px rgba(0,0,0,0.2);
+  background-color: rgb(246, 248, 250);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  padding:10px;
+  text-align:center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
+  display: flex;
+  flex-basis: 50%;
+  padding:20px 20px 20px;
+  margin:10px;
+}
+.firsthalf{
+  width:50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position:relative;
+}
+.btn-clk{
+  width:30%;
+  height: 50px;
+  background-color: rgb(60, 182, 238);
+  border: none;
+  border-radius: 5px;
+  color:white;
+  margin: 29px 84px 20px;
+}
+.text-icons{
+  padding-left: 30px;
+}
+.text-icons .fa{
+  width:10%;
+}
+.text_field{
+  width:75%;
+  height:30px;
+  border: 3px solid grey;
+  margin: 7px;
+  padding: 25px;
+  border: 1px thin rgb(252, 249, 249);
+  border-radius: 5px;
+}
+.firsthalf input:hover{
+  border-color: rgb(62, 202, 202);
+}
+.secondhalf{
+  width:50%;
+}
+.secondhalf img{
+  margin: 20px;
+  width:100%;
+  height:70%;
+}
+.dir-link{
+  text-align: center;
+  margin-left: 162px;
+  color:red;
+  font-size: large;
+}
+.signinimg{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width:400px;
+} */
+
+/* --------contact-page-------- */
+/* .contact-section{
+  margin-top:10px;
+  padding:10px;
+  
+}
+.row{
+  width:100%;
+  padding:30px;
+  flex-basis:40%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.contact-col{
+  padding:10px 10px;
+  text-align: left;
+  flex-basis: 30%;
+  box-shadow: 0 0 18px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.contact-col .fa{
+  color:rgb(60, 182, 238);
+}
+.contact-field{
+  width:80%;
+  margin:10%;
+  padding:5%;
+  box-shadow:0 0 18px 0px rgba(0,0,0,0.2);
+} */
+
+/* ------home-page------- */
+/* .home-page{ 
+  display: flex;
+  height:100vh;
+}
+.home-div-first{
+  width:50%;
+  background:rgb(60, 182, 238);;
+}
+.home-div-second{
+  width:50%;
+  background: rgb(230, 230, 241);
+}
+.home-div{
+  top:50%;
+  left:50%;
+  width: 80%;
+  align-items: center;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.about-div{
+  display: grid;
+}
+.about-col{
+  grid-column: 1/2;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.emp-profile img{
+  width:30%;
+  height:100px;
+} */
